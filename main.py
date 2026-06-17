@@ -1,10 +1,3 @@
-ဒီ Feature တွေကို ထည့်သွင်းပြီး Bot ကို ပိုမိုလုံခြုံအောင် ပြင်ဆင်ပေးလိုက်ပါတယ်။ အောက်မှာ ပြင်ဆင်ထားတဲ့ Code ကို တင်ပေးလိုက်ပါတယ်။
-
----
-
-🔧 ပြင်ဆင်ထားတဲ့ Code (Improved Version)
-
-```python
 import os
 import re
 import sys
@@ -781,59 +774,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-```
-
----
-
-📚 Bot Commands များ (Admin အတွက်)
-
-Command Description Example
-/add_id <client_id> Client ID ကို Authorized List တွင်ထည့်ရန် /add_id ID-1234-5678-9ABC
-/remove_id <client_id> Client ID ကို Authorized List မှဖယ်ရှားရန် /remove_id ID-1234-5678-9ABC
-/all_add_id Authorized Users အားလုံးကိုကြည့်ရန် /all_add_id
-/pending Pending Users များကိုကြည့်ရန် /pending
-/blacklist <client_id> User ကို Blacklist တွင်ထည့်ရန် /blacklist ID-1234-5678-9ABC
-/unblacklist <client_id> User ကို Blacklist မှဖယ်ရှားရန် /unblacklist ID-1234-5678-9ABC
-/stats System Statistics ကြည့်ရန် /stats
-/help Command များကိုကြည့်ရန် /help
-
----
-
-🔒 Security Features Added
-
-1. Admin Only Access - Command များကို Admin များသာ သုံးနိုင်ပါသည်။
-2. Rate Limiting - Spam တိုက်ခိုက်မှုများကို ကာကွယ်ရန် (၁ မိနစ်လျှင် ၁၀ ခါသာ)။
-3. Blacklist System - မလိုလားအပ်သော Users များကို ပိတ်ပင်နိုင်သည်။
-4. Session Timeout - သက်တမ်းကုန်ဆုံးသွားသော Sessions များကို အလိုအလျောက်ရှင်းလင်းခြင်း။
-5. Persistent Storage - Authorized Users စာရင်းကိ် File တွင်သိမ်းဆည်းထားခြင်း။
-6. Input Validation - Client ID ပုံစံမှန်ကန်မှုကိုစစ်ဆေးခြင်း။
-7. Thread Safety - Concurrent Operations များအတွက် Lock သုံးခြင်း။
-8. Environment Variables - Sensitive Data များကို Environment Variables ဖြင့်သိမ်းဆည်းနိုင်သည်။
-
----
-
-⚙️ Installation & Setup
-
-```bash
-# Install required packages
-pip install requests urllib3
-
-# Set environment variables (optional)
-export TELEGRAM_BOT_TOKEN="your_bot_token"
-export ADMIN_CHAT_IDS="7592705124"
-export PORTAL_ENDPOINT_URL="your_portal_url"
-
-# Run the script
-python portal_manager.py
-```
-
----
-
-📝 Note
-
-· Production Environment အတွက် Database (SQLite/PostgreSQL) ဖြင့် သိမ်းဆည်းသင့်ပါသည်။
-· Webhook ဖြင့် Real-time Updates ရယူနိုင်အောင် ပြင်ဆင်သင့်ပါသည်။
-· Logging System ထည့်သွင်းသင့်ပါသည်။
-· SSL Certificate ကို စနစ်တကျ Configure လုပ်သင့်ပါသည်။
-
-ဒီ Code ကို သုံးပြီး သင့် Bot ကို လုံခြုံအောင်၊ စနစ်ကျအောင် ဆောင်ရွက်နိုင်ပါပြီ။ 🚀
